@@ -26,9 +26,9 @@ A browser-based pinball game built with [Construct](https://www.construct.net/en
 Start Menu → Level 1 → Level 2 → Game Over → Start Menu
 ```
 
-- [Start Menu](./Assets/pinball%201%20-%20start%20menu.PNG)
-- [Level 1](./Assets/pinball%201.0%20-%20Level%201.PNG)
-- [Game over](./Assets/pinball%201.0%20-%20GameOver.PNG)
+- ![Start Menu](./Assets/pinball%201%20-%20start%20menu.PNG)
+- ![Level 1](./Assets/pinball%201.0%20-%20Level%201.PNG)
+- ![Game over](./Assets/pinball%201.0%20-%20GameOver.PNG)
 
 - Reach **500 points** on Level 1 to advance to Level 2
 - Ball resets to the plunger lane when lost
