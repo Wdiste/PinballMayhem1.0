@@ -1,168 +1,47 @@
-# 🎯 PinballX
+# 🎰 Pinball Game
 
-A simple, browser-based pinball game featuring a start menu, one handcrafted level, and a game over screen. Built for fun and nostalgia.
+A browser-based pinball game built with [Construct](https://www.construct.net/en).
 
----
+## 🕹️ How to Play
 
-## 📸 Screenshots
+| Key | Action |
+|-----|--------|
+| `Z` | Left flipper |
+| `/` | Right flipper |
+| `Space` (hold & release) | Launch ball via plunger |
 
-```
-[ Start Menu ]  →  [ Gameplay ]  →  [ Game Over Screen ]
-```
+## ✨ Features
 
----
+- Two unique pinball tables
+- Plunger launch mechanic — hold Space to charge, release to fire
+- Score tracking with point-scoring bumpers
+- 3 balls per game
+- Game Over screen with final score
+- Start menu
+- Full keyboard controls
 
-## 🕹️ Features
-
-- **Start Menu** — Clean title screen with Play and Quit options
-- **One Level** — A carefully designed single-screen pinball table with bumpers, flippers, and ramps
-- **Game Over Screen** — Displays your final score with options to retry or return to the main menu
-- **Score Tracking** — Points awarded for hitting bumpers, passing through ramps, and clearing targets
-- **Lives System** — Players start with 3 balls; lose them all and it's game over
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- [Node.js](https://nodejs.org/) v18+ *(only if running a local dev server)*
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/pinballx.git
-
-# Navigate into the project directory
-cd pinballx
-
-# Install dependencies (optional, for dev server)
-npm install
-```
-
-### Running the Game
-
-**Option 1 — Open directly in browser:**
-
-```bash
-open index.html
-```
-
-**Option 2 — Run with a local dev server:**
-
-```bash
-npm start
-```
-
-Then open your browser and navigate to `http://localhost:3000`.
-
----
-
-## 🎮 Controls
-
-| Action         | Key            |
-|----------------|----------------|
-| Left Flipper   | `←` or `Z`     |
-| Right Flipper  | `→` or `/`     |
-| Launch Ball    | `Space`        |
-| Pause          | `P`            |
-| Quit to Menu   | `Escape`       |
-
----
-
-## 🗂️ Project Structure
+## 🗺️ Game Flow
 
 ```
-pinballx/
-├── index.html          # Entry point
-├── style.css           # Global styles
-├── src/
-│   ├── main.js         # Game initialization
-│   ├── screens/
-│   │   ├── startMenu.js    # Start menu logic & rendering
-│   │   ├── gameOver.js     # Game over screen logic & rendering
-│   │   └── game.js         # Main gameplay loop
-│   ├── entities/
-│   │   ├── ball.js         # Ball physics
-│   │   ├── flipper.js      # Flipper mechanics
-│   │   └── bumper.js       # Bumper collision & scoring
-│   └── utils/
-│       ├── physics.js      # Collision detection helpers
-│       └── score.js        # Score management
-├── assets/
-│   ├── sounds/         # SFX (bumper hit, ball launch, game over)
-│   └── sprites/        # Game graphics
-├── package.json
-└── README.mkd
+Start Menu → Level 1 → Level 2 → Game Over → Start Menu
 ```
 
----
+- Reach **500 points** on Level 1 to advance to Level 2
+- Ball resets to the plunger lane when lost
+- Game ends when all 3 balls are lost
 
-## 🧠 Game Flow
+## 🛠️ Built With
 
-```
-Start Menu
-    │
-    └──[ Press Play ]──▶ Gameplay
-                              │
-                    ┌─────────┴─────────┐
-                    │                   │
-              Ball in play         All balls lost
-                    │                   │
-                    └─────────┬─────────┘
-                              │
-                        Game Over Screen
-                              │
-                    ┌─────────┴─────────┐
-                    │                   │
-               [ Retry ]          [ Main Menu ]
-```
+- [Construct](https://www.construct.net/en) — no-code/low-code game engine
 
----
+## 🚧 In Progress
 
-## 🏗️ Built With
+- Custom theme and artwork
+- Sound effects
+- Additional bumpers and obstacles
+- Mobile/touch support
 
-- **HTML5 Canvas** — Rendering
-- **Vanilla JavaScript** — Game logic
-- **CSS3** — UI screens and styling
-- *(No external game engine — built from scratch!)*
+## 📦 How to Run
 
----
-
-## 📋 Roadmap
-
-- [ ] High score leaderboard (local storage)
-- [ ] Additional levels / tables
-- [ ] Mobile touch controls
-- [ ] Background music toggle
-- [ ] Multiplayer score challenge mode
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! To get started:
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m 'Add your feature'`
-4. Push to the branch: `git push origin feature/your-feature`
-5. Open a Pull Request
-
-Please make sure your code follows the existing style and includes comments where appropriate.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👾 Author
-
-Made with ❤️ by [Your Name](https://github.com/yourusername)
-
-> *"Just one more ball..."*
+1. Open the project in Construct
+2. Press **F5** to preview in browser
